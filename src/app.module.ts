@@ -1,7 +1,5 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
 import { PlacesModule } from './modules/places/places.module';
 import 'dotenv/config';
 import { Place } from './modules/places/entities/place.entity';
@@ -20,7 +18,5 @@ import { Place } from './modules/places/entities/place.entity';
     }),
     PlacesModule,
   ],
-  controllers: [AppController],
-  providers: [AppService],
 })
 export class AppModule {}
