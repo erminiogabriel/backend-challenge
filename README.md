@@ -8,9 +8,13 @@ Este desafio tem como objetivo avaliar as habilidades técnicas do candidato a v
 #### Requisitos implementados
 
 ✅ A API deverá ser desenvolvida com Node.js e Express;
+
 ✅ Apenas o Local e a Meta poderão ser editados;
+
 ✅ O mesmo local em determinado país não poderá ser adicionado de forma duplicada;
+
 ✅ A listagem dos dados deverá ser ordenada de forma crescente pela meta;
+
 ✅ O candidato deverá adicionar ao projeto uma explicação de como executar a aplicação.
 
 #### Bônus
@@ -18,10 +22,15 @@ Este desafio tem como objetivo avaliar as habilidades técnicas do candidato a v
 > Requisitos que não são obrigatórios mas podem te deixar em vantagem com relação aos outros candidatos.
 
 ✅ Utilização do framework [NestJS](https://nestjs.com/);
+
 ✅ Typescript;
+
 ✅ Testes automatizados;
+
 ✅ [TypeORM](https://typeorm.io/#/);
+
 ✅ [Docker](https://www.docker.com/);
+
 ❌ Deploy para [Google Cloud Platform](https://cloud.google.com/) (ao criar conta é possível receber um bonus para teste).
 
 
@@ -39,6 +48,7 @@ O projeto estará rodando em [http://localhost:3000](http://localhost:3000)
 ### Rotas
 
 -`POST /places`: método para criar um novo local
+
 Corpo da requisição:
 ```bash
 {
@@ -49,8 +59,11 @@ Corpo da requisição:
 }
 ```
 -`GET /places`: método para listar todos os locais cadastrados
+
 -`GET /places/:id`: método para visualizar um local específico
+
 -`PUT /places/:id`: método para atualizar um local existente
+
 Corpo da requisição:
 ```bash
 {
