@@ -35,3 +35,27 @@ docker-compose up --build -d
 ```
 
 O projeto estará rodando em [http://localhost:3000](http://localhost:3000)
+
+### Rotas
+
+-`POST /places`: método para criar um novo local
+Corpo da requisição:
+```bash
+{
+  "country": "Brasil",
+  "location": "Fortaleza",
+  "goal": "07/2024",
+  "flagUrl": "https://example.com/brasil.png"
+}
+```
+-`GET /places`: método para listar todos os locais cadastrados
+-`GET /places/:id`: método para visualizar um local específico
+-`PUT /places/:id`: método para atualizar um local existente
+Corpo da requisição:
+```bash
+{
+  "goal": "07/2025",
+  "location": "Nova York"
+}
+```
+-`DELETE /places/:id`: método para excluir um local específico
